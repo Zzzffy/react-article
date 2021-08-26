@@ -1,0 +1,32 @@
+{
+  "name": "blog-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "serve": "npx nodemon ./dist/index",
+    "test": "npx mocha",
+    "prod": "tsc"
+  },
+  "keywords": [],
+  "author": "zykee",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "@types/mongodb": "^4.0.7",
+    "@types/node": "^16.4.12",
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "busboy": "^0.3.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "mongodb": "^4.1.0"
+  }
+}
